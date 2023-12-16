@@ -1,0 +1,274 @@
+header{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    background-color: #fff;
+    .container{
+        .row{
+            .col-xl-4{
+                .believe{
+                    max-width: 220px;
+                    font-weight: 500;
+                }
+                .num{
+                    color: #fff;
+                    padding: 30px;
+                    transition: 1s;
+                    margin-left: 1rem;
+                    cursor: pointer;
+                    background-color: rgb(246, 33, 75);
+                    &:hover{
+                        color: rgb(246, 33, 75);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .navbar{
+            .collapse{
+                ul{
+                    .dropdown{
+                        &:hover{
+                            .dropdown-menu{
+                                display: block;
+                            }
+                        }
+                    }
+                    li{
+                        .active{
+                            color: rgb(246, 33, 75);
+                        }
+                        a{
+                            color: black;
+                            transition: 0.5s;
+                            position: relative;
+                            font-size: 12px;
+                            font-weight: 500;
+                            &:hover{
+                                color: rgb(246, 33, 75);
+                                &::after{
+                                    opacity: 1;
+                                    transition: 1s;
+                                    width: 100%;
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                height: 2px;
+                                position: absolute;
+                                width: 0;
+                                background-color: rgb(246, 33, 75);
+                                left: 0;
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#fitnes{
+    background-image: url("../../../assets/Image/header-bg\ \(1\).jpg");
+    width: 100%;
+    height: 45rem;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    .bg{
+width: 100%;
+height: 45rem;
+background-color: black;
+position: absolute;
+top: 0;
+opacity: 0.4;
+    }
+    .text{
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    }
+}
+#about{
+   .container{
+    .text-about{
+        .headTxt{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+    #products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+        .box{
+            width: 250px;
+            img{
+                width: 100%;
+            }
+            button{
+                color: #fff;
+                background-color: green;
+                transition: 1s;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid green;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                i{
+                    margin-top: 0.5rem;
+                    margin: 0 0.3rem;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: green;
+                }
+            }
+        }
+    }
+    .button{
+        #loadMore{
+            color: #fff;
+            transition: 1s;
+            background-color: black;
+            padding: 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: #fff;
+                color: black;
+            }
+        }
+    }
+   }
+}
+#courses{
+ .container{
+    .row{
+        .col-xl-4{
+            .box{
+                .head{
+                    position: relative;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        padding: 15px;
+                        background-color: rgb(246, 33, 75);
+                        color: #fff;
+                        max-width: 150px;
+                        position: absolute;
+                        bottom: 0px;
+                        margin: 1rem;
+                    }
+                }
+                .text-box{
+                    .price{
+                        color: rgb(246, 33, 75);
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        
+                    }
+                    .running{
+                        font-weight: 500;
+                            font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .courseHead{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+ }
+}
+#huge{
+    background-image: url("../../../assets/Image/callto-bg.jpg");
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .bg{
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 25rem;
+        opacity: 0.4;
+    }
+    .hugeContent{
+        z-index: 999 !important;
+        color: #fff;
+        .hugetxt{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        button{
+            background-color: rgb(246, 33, 75);
+            color: #fff;
+            border-radius: 25px;
+            transition: 1s;
+            padding: 10px;
+            border: 1px solid rgb(246, 33, 75);
+            &:hover{
+                background-color: #fff;
+                color: rgb(246, 33, 75);
+            }
+        }
+    }
+}
+footer{
+    .container{
+       .logoShare{
+        gap: 15px;
+        i{
+            padding: 15px;
+            background-color: black;
+            color: #fff;
+            transition: 1s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color: rgb(246, 33, 75);
+            }
+        }
+       } 
+    }
+}
+@media(max-width:500px){
+    header{
+        .container{
+            .connect{
+                display: none !important;
+            }
+        }
+        .container{
+        .navbar{
+            width: 100%;
+        }
+    }
+}
+}
